@@ -1,0 +1,16 @@
+PODS:
+  - PhoneNumberField (0.9.0)
+
+DEPENDENCIES:
+  - PhoneNumberField (from `../`)
+
+EXTERNAL SOURCES:
+  PhoneNumberField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PhoneNumberField: 16007771038f437b4ddabae659234d0e198a9b3e
+
+PODFILE CHECKSUM: 526fec658b375e19185295e335f01ee0a9b6c637
+
+COCOAPODS: 1.11.3

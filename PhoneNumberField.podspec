@@ -30,10 +30,10 @@ Letting users to choose a country's dialing code easily in a SwiftUI TextField h
 
   s.ios.deployment_target = '14.0'
 
-  s.source_files = 'PhoneNumberField/Classes/**/*'
+  s.source_files = 'Source/*.swift'
   
    s.resource_bundles = {
-     'PhoneNumberField' => ['PhoneNumberField/Resources/*.json']
+     'PhoneNumberField' => ['Resources/*.json']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

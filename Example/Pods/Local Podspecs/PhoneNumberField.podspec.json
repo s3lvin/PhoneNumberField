@@ -18,10 +18,10 @@
   "platforms": {
     "ios": "14.0"
   },
-  "source_files": "PhoneNumberField/Classes/**/*",
+  "source_files": "Source/*.swift",
   "resource_bundles": {
     "PhoneNumberField": [
-      "PhoneNumberField/Resources/*.json"
+      "Resources/*.json"
     ]
   },
   "frameworks": "SwiftUI"

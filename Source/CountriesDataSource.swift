@@ -23,8 +23,11 @@ public class CountriesDataSourceLocal: CountriesDataSource {
     public var displayNameLocale: String
     
     public init(displayNameLocale: String = Locale.current.languageCode!) throws {
-        let bundle = Bundle(identifier: "org.s3lvin.cocoapods.PhoneNumberField")
-        if let bundle = bundle, let countriesFileURL = bundle.url(forResource: "countries", withExtension: "json") {
+    
+        guard let resourceBundleURL = Bundle(identifier: "org.cocoapods.PhoneNumberField")?.url(forResource: "PhoneNumberField", withExtension: "bundle"), let resourceBundle =  Bundle(url: resourceBundleURL) else {
+            throw CountriesDataSourceError.countriesFileNotFound }
+       
+        if let countriesFileURL = resourceBundle.url(forResource: "countries", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: countriesFileURL)
                 let countriesItems = try JSONDecoder().decode([CountryCodeItem].self, from: data)

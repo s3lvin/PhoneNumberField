@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PhoneNumberField'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of PhoneNumberField.'
+  s.version          = '0.9.0'
+  s.summary          = 'A SwiftUI Phone Number TextField with country code picker'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Letting users to choose a country's dialing code easily in a SwiftUI TextField has been a problem. For example if you need a PhoneNumberField for OTP validation, you need to ask user to somehow specify the dialing code of a country. This library attempts to solve this by offering a searchable dialing code picker for a phone number TextField.
                        DESC
 
-  s.homepage         = 'https://github.com/Selvin/PhoneNumberField'
+  s.homepage         = 'https://github.com/s3lvin/PhoneNumberField'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Selvin' => 'mariaselvin@gmail.com' }
-  s.source           = { :git => 'https://github.com/Selvin/PhoneNumberField.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/s3lvin/PhoneNumberField.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+
+  s.ios.deployment_target = '14.0'
 
   s.source_files = 'PhoneNumberField/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PhoneNumberField' => ['PhoneNumberField/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'PhoneNumberField' => ['PhoneNumberField/Resources/*.json']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'SwiftUI'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

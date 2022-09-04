@@ -1,0 +1,28 @@
+{
+  "name": "PhoneNumberField",
+  "version": "0.9.0",
+  "summary": "A SwiftUI Phone Number TextField with country code picker",
+  "description": "Letting users to choose a country's dialing code easily in a SwiftUI TextField has been a problem. For example if you need a PhoneNumberField for OTP validation, you need to ask user to somehow specify the dialing code of a country. This library attempts to solve this by offering a searchable dialing code picker for a phone number TextField.",
+  "homepage": "https://github.com/s3lvin/PhoneNumberField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Selvin": "mariaselvin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/s3lvin/PhoneNumberField.git",
+    "tag": "0.9.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "PhoneNumberField/Classes/**/*",
+  "resource_bundles": {
+    "PhoneNumberField": [
+      "PhoneNumberField/Resources/*.json"
+    ]
+  },
+  "frameworks": "SwiftUI"
+}
